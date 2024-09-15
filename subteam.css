@@ -1,0 +1,219 @@
+body {
+  background-image: url(./assets/background.png), linear-gradient(to bottom, #071522 0, black 130vh);
+  }
+  .navbar{
+    position: fixed;
+    z-index: 9999;
+  }
+  .header{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .header:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0); 
+    transform-origin: bottom left; 
+    transition: transform 0.3s ease; 
+  }
+  .header:hover::after{
+    transform: scaleX(1);
+  }
+  .header:hover{
+    transform: scale(1.1);
+  }
+  .buttons{
+    position: relative;
+    margin-left: 600px;
+    margin-top: -59px;
+  }
+  .reachout{
+    margin-top: 30px;
+    margin-left: 880px;
+  }
+  .footer{
+    border:2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background:transparent;
+    color: whitesmoke;
+    transition: transform 0.3s, border-color 0.3s;
+    margin-left: 30px;
+    margin-right: -30px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer:hover{
+    transform: scale(1.1);
+  }
+  .footer:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    pointer-events: none;
+  }
+  .footer:hover:after{
+    border-color: white;
+  }
+  ul{
+    list-style: none;
+  }
+  ul li a{
+    display:block;
+  }
+  .team:hover  .sub-team{
+    display:block;
+  }
+  li{
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-left: -30px;
+    margin-top: 30px;
+    color: white;
+  }
+  .link{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: center;
+  }
+  .link:hover{
+    color: red;
+  }
+  .comp{
+    margin-top: 20px;
+  }
+  .sub-team{
+    margin-left: -65px;
+    display: none;
+    height: 320px;
+    width: 180px;
+    position: absolute;
+    background-color: rgba(6, 6, 7, 0.522);
+    border-radius: 10%;
+    border-color: whitesmoke;
+  }
+  .sub-team-links{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    border: transparent;
+    color: whitesmoke;
+  }
+  .container-fluid{
+    margin-top: -100px;
+    position: fixed;
+  }
+.member1,.member2,.member3,.member4,.member5,.member6,.member7 {
+    transition: transform 0.3s ease;
+}
+
+.member1:hover,.member2:hover,.member3:hover,.member4:hover,.member5:hover,.member6:hover,.member7:hover {
+    transform: scale(1.05); 
+}
+.member1{
+    height: 300px;
+    width: 1200px;
+    margin-top: 100px;
+    margin-left: 30px;
+    background-color: rgba(255, 255, 255, .1);
+}
+.pic1{
+    height: 300px;
+    width: 350px;
+}
+.information1{
+    height: 300px;
+    width: 850px;
+    margin-left: 350px;
+    margin-top: -300px;
+}
+.member2, .pic2 , .information2{
+    margin-top: 80px;
+}
+.member4, .pic4 , .information4{
+    margin-top: 80px;
+}
+.member6, .pic6 , .information6{
+    margin-top: 80px;
+}
+.member2,.member4,.member6{
+    height: 300px;
+    width: 1200px;
+    margin-left: 280px;
+    background-color: rgba(255, 255, 255, .1);
+    position: relative;
+}
+.pic2,.pic4,.pic6{
+    height: 300px;
+    width: 350px;
+    margin-left: 850px;
+}
+.information2{
+    height: 300px;
+    width: 850px;
+    margin-top: -300px;
+}
+.information4,.information6{
+    height: 300px;
+    width: 850px;
+    margin-top: -300px;
+}
+.member3,.member5,.member7{
+    height: 300px;
+    width: 1200px;
+    margin-top: 80px;
+    margin-left: 30px;
+    background-color: rgba(255, 255, 255, .1);
+}
+.pic3,.pic5,.pic7{
+    height: 300px;
+    width: 350px;
+}
+.information3,.information5,.information7{
+    height: 300px;
+    width: 850px;
+    margin-left: 350px;
+    margin-top: -300px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+p{
+    color: white;
+    text-align: center;
+}
+.photo{
+    width: 300px;
+    height: 250px;
+    margin-left: 23px;
+    margin-top: 23px;
+}
